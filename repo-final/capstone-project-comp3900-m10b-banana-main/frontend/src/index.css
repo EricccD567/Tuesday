@@ -1,0 +1,54 @@
+@import-normalize;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --primary-purple: hsl(251, 78%, 67%);
+  --secondary-purple: hsl(240, 68%, 78%);
+  --secondary-pink: hsl(267, 53%, 84%);
+  --rose-gold: hsl(18, 51%, 90%);
+  --ghost-white: hsl(290, 100%, 99%);
+  --status-green: hsl(120, 60%, 67%);
+  --status-yellow: hsl(60, 96%, 79%);
+  --status-orange: hsl(35, 100%, 64%);
+  --status-red: hsl(3, 100%, 69%);
+}
