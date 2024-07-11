@@ -1,6 +1,4 @@
-# Work Diary
-
----
+# Eric's Work Diary
 
 ## Week 1
 
@@ -8,8 +6,6 @@
 - Wrote minutes-1-1 and minutes-1-2
 - Watched week 1 lecture and made summary/talking points
 - Came up with three novel ideas for project 4
-
----
 
 ## Week 2
 
@@ -21,8 +17,6 @@
 - Watched week 2 lecture and made summary/talking points
 - Made notes on system architecture
 - Wrote minutes-2-1 and minutes-2-2
-
----
 
 ## Week 3
 
@@ -39,8 +33,6 @@
 - Created system architecture diagram
 - Conform storyboards and take screenshots
 
----
-
 ## Week 4
 
 - Set up frontend files and branches on GitHub
@@ -51,8 +43,6 @@
 - Frontend: signup x 3, login
 - Wrote minutes-4-1 and minutes-4-2
 
----
-
 ## Week 5
 
 - Presented user stories and frontend for Progressive Demo A
@@ -62,16 +52,12 @@
 - Send tokens from headers authorization instead of body in promise responses and change appropriately in Flask
 - Wrote minutes-5-2
 
----
-
 ## Week 6
 
 - Added extra Python requirements (pytest)
 - Refactored backend and wrote backend tests
 - Wrote minutes-6-1
 - Assigned non-functional acceptance criteria in Jira
-
----
 
 ## Week 7
 
@@ -89,22 +75,16 @@
 - Wrote minutes-7-1, minutes-7-2 and minutes-7-3
 - Created connected taskmasters' profile page and taskboard page
 
----
-
 ## Week 8
 
 - Created 404 not found page
 - Fixed connected taskmasters' profile page and taskboard page reload bug
 - Added badge to view requests button
 
----
-
 ## Week 9
 
 - Add avatar handling functionality on all associated pages and components
 - [Sprint 3](https://docs.google.com/document/d/1QCfhP3uAGb4cr3f9Vg3lE8umGI9fPMR5vN8sMkGB3Nc/edit#)
-
----
 
 ## Week 10
 
@@ -119,11 +99,9 @@
 - Report
 - Peer review
 
----
-
 ## User Stories
 
-### As a [who], I want to [what], so that [why].
+### As a [who], I want to [what], so that [why]
 
 1. Task masters must be able to create a task, including a title, description, optional deadline, and assign it to either themselves or one of the task masters they are connected with. Each task must also have a system-assigned ID that is shown and is to be assigned to the creating taskmaster if not assigned to anyone else.
     - As a task master, I want to create unique tasks with a title, a description and an optional deadline, so that I and other task masters can easily see the details of any task.

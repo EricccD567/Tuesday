@@ -1,7 +1,5 @@
 # Lecture Summaries
 
----
-
 ## Week 1
 
 - Scrum
@@ -12,8 +10,6 @@
 - Lab 'participation' recorded
 - Must be able to deploy product on EITHER vlab or lubuntu VM (CHOOSE ONLY 1)
 - User stories should be in proposal (as screenshots), acceptance criteria in Jira (no need to put AC in proposal)
-
----
 
 ## Week 2
 

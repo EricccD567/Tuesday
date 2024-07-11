@@ -1,8 +1,6 @@
-# Minutes-*[Week Number]*-*[Weekly Meeting Number]*
+# Minute-[week number]-[weekly meeting number]
 
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-
----
 
 ## Date
 
@@ -32,21 +30,19 @@ Blackboard Collaborate/Discord
 2. Second item
 3. Third item
 
----
-
 ## Action Items
 
-1. E/K/L/T/V/ALL: First item
-2. E/K/L/T/V/ALL: Second item
-3. E/K/L/T/V/ALL: Third item
+1. Assignee: First item
+2. Assignee: Second item
+3. Assignee: Third item
 
 ---
 
 ## Next Meeting
 
-### Date
+### Set Date
 
-dd/mm/yy, DAY
+dd/mm/yy, day
 
 ### Starting Time
 
