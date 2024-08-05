@@ -1,6 +1,6 @@
 # Tuesday
 
-cs3900 project
+UNSW COMP3900 Project
 
 [Original Repository](https://github.com/unsw-cse-comp3900-9900-22T3/capstone-project-comp3900-m10b-banana)
 
@@ -9,9 +9,12 @@ cs3900 project
 Tuesday is a modern task management system that takes productivity to the next level.
 It allows users (task masters) to add team members and create tasks seamlessly.
 Unlike other task management systems, our built-in self-reflection system provides daily analytical feedback and personalised suggestions for accelerated task improvements.
-Furthermore, our state of the art priority algorithm provides a ordered list of tasks to do next so users can avoid struggling to meet deadlines.
+Furthermore, our state-of-the-art priority algorithm provides an ordered list of tasks to do next so users can avoid struggling to meet deadlines.
+Users are able to easily assign/reassign tasks and assist peers by checking their task status and load, resulting in increased team efficiency.
 
 ## Setup
+
+Note: The server is offline indefinitely.
 
 To run the client application, you will need to install [Node.js](https://nodejs.org/en/download/) and [Python 3](https://www.python.org/downloads/).
 Once installed, the following commands should yield a similar version:
