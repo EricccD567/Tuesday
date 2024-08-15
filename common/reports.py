@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import asyncio
 import numpy as np
 from datetime import datetime, time, timedelta
-from ..database.database import MongoDBAccess
+from database.database import MongoDBAccess
 import base64
 from helpers.backend_helpers import _get_assigned_tasks
 
