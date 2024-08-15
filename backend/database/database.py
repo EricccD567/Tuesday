@@ -7,8 +7,6 @@ import motor.motor_asyncio
 class MongoDBAccess:
     def __init__(self):
         # TODO: Add valid database
-        # Defunct database:
-        # mongodb = 'mongodb+srv://backend:comp3900@comp3900.3ejklkp.mongodb.net/?retryWrites=true&w=majority'
         mongodb = ''
         self.client = motor.motor_asyncio.AsyncIOMotorClient(mongodb)
 

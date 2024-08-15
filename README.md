@@ -14,8 +14,6 @@ Users are able to easily assign/reassign tasks and assist peers by checking thei
 
 ## Setup
 
-Note: The server is offline indefinitely.
-
 To run the client application, you will need to install [Node.js](https://nodejs.org/en/download/) and [Python 3](https://www.python.org/downloads/).
 Once installed, the following commands should yield a similar version:
 
