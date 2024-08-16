@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TaskDialog from './TaskDialog';
-import { TaskStatusDropdown, TaskBoardPriorityStatus } from '../components';
+import { TaskStatusDropdown, TaskBoardPriorityStatus } from '.';
 
 function Task({ task }) {
   // set canEdit for a task to be true if the user is its creator or one of its assignees
@@ -52,17 +52,27 @@ function Task({ task }) {
         hover={true}
         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
       >
-        <TableCell component="th" scope="row" onClick={handleOpenTaskDialog}>{task['title']}</TableCell>
-        <TableCell align="center" onClick={handleOpenTaskDialog}>{task['task_id']}</TableCell>
-        <TableCell align="left" onClick={handleOpenTaskDialog}>{task['description']}</TableCell>
-        <TableCell align="center" onClick={handleOpenTaskDialog}>{formatDeadline(task['deadline'])}</TableCell>
+        <TableCell component="th" scope="row" onClick={handleOpenTaskDialog}>
+          {task['title']}
+        </TableCell>
+        <TableCell align="center" onClick={handleOpenTaskDialog}>
+          {task['task_id']}
+        </TableCell>
+        <TableCell align="left" onClick={handleOpenTaskDialog}>
+          {task['description']}
+        </TableCell>
+        <TableCell align="center" onClick={handleOpenTaskDialog}>
+          {formatDeadline(task['deadline'])}
+        </TableCell>
         <TableCell align="center">
           <TaskStatusDropdown task={task} canEdit={canEdit} />
         </TableCell>
         <TableCell align="center">
           <TaskBoardPriorityStatus task={task} canEdit={canEdit} />
         </TableCell>
-        <TableCell align="center" onClick={handleOpenTaskDialog}>{task['assignee_names'].join(', ')}</TableCell>
+        <TableCell align="center" onClick={handleOpenTaskDialog}>
+          {task['assignee_names'].join(', ')}
+        </TableCell>
       </TableRow>
       <TaskDialog
         task={task}

@@ -5,7 +5,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import TextField from '@mui/material/TextField';
-import { SelectAssigneeDropdown, TaskDependencyDropdown } from '../components';
+import { SelectAssigneeDropdown, TaskDependencyDropdown } from '.';
 import { editTask } from '../helper/ApiHelper';
 
 function TaskDialog(props) {
@@ -14,10 +14,16 @@ function TaskDialog(props) {
   // state variables to store dialog field values
   const [title, setTitle] = useState(task['title']);
   const [description, setDescription] = useState(task['description']);
-  const [selectedAssigneeIds, setSelectedAssigneeIds] = useState(task['assignee_ids']);
+  const [selectedAssigneeIds, setSelectedAssigneeIds] = useState(
+    task['assignee_ids']
+  );
   const [deadline, setDeadline] = useState(task['deadline']);
-  const [hoursToComplete, setHoursToComplete] = useState(task['hours_to_complete']);
-  const [taskDependencies, setTaskDependencies] = useState(task['dependency_ids']);
+  const [hoursToComplete, setHoursToComplete] = useState(
+    task['hours_to_complete']
+  );
+  const [taskDependencies, setTaskDependencies] = useState(
+    task['dependency_ids']
+  );
 
   // fields are disabled when editMode is false
   // fields are enabled when editMode is true
@@ -29,8 +35,8 @@ function TaskDialog(props) {
     setDescription(task['description']);
     setSelectedAssigneeIds(task['assignee_ids']);
     setDeadline(task['deadline']);
-    setHoursToComplete(task['hours_to_complete'])
-    setTaskDependencies(task['dependency_ids'])
+    setHoursToComplete(task['hours_to_complete']);
+    setTaskDependencies(task['dependency_ids']);
     setEditMode(false);
     handleClose();
   };
@@ -47,7 +53,16 @@ function TaskDialog(props) {
     e.preventDefault();
     const token = localStorage.getItem('token');
     const utcDeadline = deadline ? new Date(deadline).toISOString() : deadline;
-    editTask(task['task_id'], title, description, selectedAssigneeIds, utcDeadline, hoursToComplete, taskDependencies, token)
+    editTask(
+      task['task_id'],
+      title,
+      description,
+      selectedAssigneeIds,
+      utcDeadline,
+      hoursToComplete,
+      taskDependencies,
+      token
+    )
       .then(() => {
         setEditMode(false);
         handleClose();
@@ -58,7 +73,7 @@ function TaskDialog(props) {
       });
   };
 
-  // format the backend deadline so that the date picker on the frontend can read it 
+  // format the backend deadline so that the date picker on the frontend can read it
   const formatDialogDeadline = (deadline) => {
     if (deadline === '') {
       return deadline;
@@ -122,7 +137,11 @@ function TaskDialog(props) {
           <TextField
             fullWidth
             disabled={!editMode}
-            defaultValue={task['assignee_names'].length ? task['assignee_names'].join(', ') : 'This task has no assignees.'}
+            defaultValue={
+              task['assignee_names'].length
+                ? task['assignee_names'].join(', ')
+                : 'This task has no assignees.'
+            }
             label="Assignee(s)"
             multiline={true}
             onClick={handleToEdit}
@@ -158,14 +177,17 @@ function TaskDialog(props) {
           <TextField
             fullWidth
             disabled={!editMode}
-            defaultValue={task['dependency_titles'].length ? task['dependency_titles'].join(', ') : 'This task has no dependencies.'}
+            defaultValue={
+              task['dependency_titles'].length
+                ? task['dependency_titles'].join(', ')
+                : 'This task has no dependencies.'
+            }
             label="Task Dependencies"
             multiline={true}
             onClick={handleToEdit}
             sx={{ mt: 2 }}
           />
         )}
-
       </DialogContent>
       <DialogActions sx={{ mb: 2 }}>
         {editMode ? (

@@ -30,7 +30,6 @@ function TaskBoardHeader({ setAllTasks, isAssigned }) {
 
   // update the tasks user can see when the 'My Tasks' toggle is changed
   useEffect(() => {
-    console.log('switch is', isToggled);
     toast.loading('Loading...', {
       id: 'loading',
     });
