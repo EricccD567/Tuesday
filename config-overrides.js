@@ -5,7 +5,7 @@ module.exports = function override(config, env) {
     assert: require.resolve('assert'),
     buffer: require.resolve('buffer'),
     crypto: require.resolve('crypto-browserify'),
-    fs: require.resolve('fs'),
+    fs: require.resolve('browserify-fs'),
     http: require.resolve('stream-http'),
     https: require.resolve('https-browserify'),
     os: require.resolve('os-browserify'),
