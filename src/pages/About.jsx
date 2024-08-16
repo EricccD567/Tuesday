@@ -31,8 +31,10 @@ function About() {
         create tasks seamlessly. Unlike other task management systems, our
         built-in self-reflection system provides daily analytical feedback and
         personalised suggestions for accelerated task improvements. Furthermore,
-        our state of the art priority algorithm provides a ordered list of tasks
-        to do next so users can avoid struggling to meet deadlines.
+        our state-of-the-art priority algorithm provides an ordered list of
+        tasks to do next so users can avoid struggling to meet deadlines. Users
+        are able to easily assign/reassign tasks and assist peers by checking
+        their task status and load, resulting in increased team efficiency.
       </Typography>
       <Typography
         variant="body1"
@@ -43,7 +45,8 @@ function About() {
           color: 'text.secondary',
         }}
       >
-        Made by M10B Banana: Eric Dai, Kevin Hu, Luke Simmonds, Taimoor Khan & Vanessa Xia
+        Made by M10B Banana: Eric Dai, Kevin Hu, Luke Simmonds, Taimoor Khan &
+        Vanessa Xia
       </Typography>
     </Box>
   );
