@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import toast from 'react-hot-toast';
 
-const backendUrl = process.env.BACKEND_URL;
+const backendUrl = 'https://tuesday-dyvr.onrender.com';
 
 // general API call function
 export async function makeAPICall(url, init) {
