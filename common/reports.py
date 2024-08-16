@@ -62,11 +62,11 @@ def report_setup(token):
     workload_activity_list, date_store = workload_calculate(user, tasks_with_deadlines, deadlines)
     workload_plot(workload_activity_list, date_store)
 
-    with open('backend/plots/plot_1.jpeg', 'rb') as im1:
+    with open('plots/plot_1.jpeg', 'rb') as im1:
         plot_1 = base64.b64encode(im1.read()).decode('utf-8')
-    with open('backend/plots/plot_2.jpeg', 'rb') as im2:
+    with open('plots/plot_2.jpeg', 'rb') as im2:
         plot_2 = base64.b64encode(im2.read()).decode('utf-8')
-    with open('backend/plots/plot_3.jpeg', 'rb') as im3:
+    with open('plots/plot_3.jpeg', 'rb') as im3:
         plot_3 = base64.b64encode(im3.read()).decode('utf-8')
     return {
         'plot_1': str(plot_1),
@@ -133,7 +133,7 @@ def plot_estimate_vs_actual_times(task_titles, task_allocated_time, task_convert
     ax.bar_label(rects2, padding=3)
     fig.tight_layout()
     fig.set_size_inches(20, 10)
-    fig.savefig('backend/plots/plot_1.jpeg')
+    fig.savefig('plots/plot_1.jpeg')
 
 def before_or_after_deadline(tasks, task_titles, deadline_tasks, end_times, task_early_or_late):
     # define figure and axes
@@ -158,7 +158,7 @@ def before_or_after_deadline(tasks, task_titles, deadline_tasks, end_times, task
 
     # display table
     fig.set_size_inches(20, 10)
-    fig.savefig('backend/plots/plot_2.jpeg')
+    fig.savefig('plots/plot_2.jpeg')
 
 def workload_plot(workload_activity_list, date_store):
     date_store.reverse()
@@ -178,7 +178,7 @@ def workload_plot(workload_activity_list, date_store):
     plt.plot(date_entries, workload_activity_list)
     plt.xlabel('Date')
     plt.ylabel('Workload Percentage')
-    f.savefig('backend/plots/plot_3.jpeg')
+    f.savefig('plots/plot_3.jpeg')
 
 # Working hours are only counted between 9-5
 def task_inprogress_duration(tasks):
